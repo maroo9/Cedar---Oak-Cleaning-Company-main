@@ -1,7 +1,7 @@
 $http = New-Object System.Net.HttpListener
 $http.Prefixes.Add("http://localhost:8085/")
 $http.Start()
-Write-Host "Cedar & Oak web server running at http://localhost:8085/"
+Write-Host "Cedar & Oak Cleaning Services web server running at http://localhost:8085/"
 
 $root = $PSScriptRoot
 

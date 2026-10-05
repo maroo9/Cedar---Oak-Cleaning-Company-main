@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const PORT = 3000;
 const PUBLIC_DIR = __dirname;
@@ -46,6 +47,14 @@ const server = http.createServer((req, res) => {
     });
 });
 
-server.listen(PORT, '127.0.0.1', () => {
-    console.log(`Cedar & Oak web server running at http://localhost:${PORT}/`);
+// 0.0.0.0 lets phones on the same Wi-Fi open the site
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Cedar & Oak Cleaning Services running at http://localhost:${PORT}/`);
+    for (const list of Object.values(os.networkInterfaces())) {
+        for (const i of list) {
+            if (i.family === 'IPv4' && !i.internal) {
+                console.log(`On your phone (same Wi-Fi): http://${i.address}:${PORT}/`);
+            }
+        }
+    }
 });
