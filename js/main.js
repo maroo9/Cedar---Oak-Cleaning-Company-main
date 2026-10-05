@@ -72,8 +72,10 @@
     }
   }
 
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwI4uHLLIdK-1qdQmvV2qwcuEf0FOUyEIkGQfUu6KqGfuUEO_kZH5lpWqOrpMAifU3Lng/exec";
+
   if (form && status) {
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       status.classList.remove("is-error");
 
@@ -84,10 +86,46 @@
         return;
       }
 
-      const data = new FormData(form);
-      const name = String(data.get("name") || "").trim();
-      status.textContent = `Thank you, ${name}. Your estimate request has been received. We'll be in touch soon.`;
-      form.reset();
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton ? submitButton.textContent : "Request Estimate";
+
+      try {
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Sending...";
+        }
+        status.textContent = "Submitting your estimate request...";
+
+        const formData = new FormData(form);
+        const name = String(formData.get("name") || "").trim();
+
+        // Convert FormData to URLSearchParams for Google Apps Script e.parameter
+        const params = new URLSearchParams();
+        for (const [key, value] of formData.entries()) {
+          params.append(key, value);
+        }
+
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          },
+          body: params.toString()
+        });
+
+        status.textContent = `Thank you${name ? `, ${name}` : ""}! Your estimate request has been received. We'll be in touch soon.`;
+        form.reset();
+      } catch (error) {
+        console.error("Form submission error:", error);
+        status.textContent = "Sorry, something went wrong while submitting. Please try calling or messaging us directly.";
+        status.classList.add("is-error");
+      } finally {
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = originalButtonText;
+        }
+      }
     });
   }
 })();
