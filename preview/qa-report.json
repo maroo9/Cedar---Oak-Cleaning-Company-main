@@ -1,0 +1,489 @@
+{
+  "loaded": true,
+  "title": "Cedar & Oak Cleaning Company | Hamilton County, Indiana",
+  "screenshots": [
+    "01-hero-desktop-1280.png",
+    "02-services-desktop-1280.png",
+    "03-estimate-form-desktop.png",
+    "04-footer-desktop.png",
+    "05-hero-tablet-768.png",
+    "06-services-tablet-768.png",
+    "07-nav-open-tablet-768.png",
+    "08-hero-mobile-390.png",
+    "09-nav-open-mobile-390.png",
+    "10-services-mobile-390.png"
+  ],
+  "logos": {
+    "desktopTop": {
+      "header": {
+        "present": true,
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "complete": true,
+        "visible": true,
+        "display": "block",
+        "box": {
+          "w": 68,
+          "h": 68
+        },
+        "src": "http://127.0.0.1:5500/assets/logo.png"
+      },
+      "hero": {
+        "present": true,
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "complete": true,
+        "visible": true,
+        "display": "block",
+        "box": {
+          "w": 68,
+          "h": 68
+        },
+        "src": "http://127.0.0.1:5500/assets/logo.png"
+      },
+      "footer": {
+        "present": true,
+        "naturalWidth": 1024,
+        "naturalHeight": 1024,
+        "complete": true,
+        "visible": true,
+        "display": "block",
+        "box": {
+          "w": 110,
+          "h": 110
+        },
+        "src": "http://127.0.0.1:5500/assets/logo.png"
+      }
+    },
+    "headerAtTop": {
+      "naturalWidth": 1024,
+      "visible": true,
+      "box": {
+        "w": 68,
+        "h": 68,
+        "top": 8
+      }
+    },
+    "footer": {
+      "present": true,
+      "naturalWidth": 1024,
+      "visibleInViewport": true,
+      "box": {
+        "w": 110,
+        "h": 110
+      }
+    },
+    "mobile": [
+      {
+        "cls": "brand__logo",
+        "present": true,
+        "naturalWidth": 1024,
+        "visible": true,
+        "box": {
+          "w": 52,
+          "h": 52
+        }
+      },
+      {
+        "cls": "hero__logo",
+        "present": true,
+        "naturalWidth": 1024,
+        "visible": true,
+        "box": {
+          "w": 68,
+          "h": 68
+        }
+      },
+      {
+        "cls": "footer__logo",
+        "present": true,
+        "naturalWidth": 1024,
+        "visible": true,
+        "box": {
+          "w": 110,
+          "h": 110
+        }
+      }
+    ]
+  },
+  "images": {
+    "broken": [],
+    "all": [
+      {
+        "src": "http://127.0.0.1:5500/assets/logo.png",
+        "complete": true,
+        "naturalWidth": 1024,
+        "broken": false,
+        "w": 68,
+        "h": 68
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2400&q=80",
+        "complete": true,
+        "naturalWidth": 2400,
+        "broken": false,
+        "w": 1308,
+        "h": 846
+      },
+      {
+        "src": "http://127.0.0.1:5500/assets/logo.png",
+        "complete": true,
+        "naturalWidth": 1024,
+        "broken": false,
+        "w": 68,
+        "h": 68
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80",
+        "complete": true,
+        "naturalWidth": 1400,
+        "broken": false,
+        "w": 509,
+        "h": 407
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80",
+        "complete": true,
+        "naturalWidth": 1400,
+        "broken": false,
+        "w": 509,
+        "h": 407
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=80",
+        "complete": true,
+        "naturalWidth": 2200,
+        "broken": false,
+        "w": 1280,
+        "h": 420
+      },
+      {
+        "src": "http://127.0.0.1:5500/assets/logo.png",
+        "complete": true,
+        "naturalWidth": 1024,
+        "broken": false,
+        "w": 110,
+        "h": 110
+      }
+    ]
+  },
+  "overflow": {
+    "desktop": {
+      "overflowX": false,
+      "scrollWidth": 1280,
+      "clientWidth": 1280,
+      "suspects": []
+    },
+    "tablet": {
+      "overflowX": false,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "navDisplay": "flex",
+      "toggleDisplay": "block",
+      "toggleVisible": true,
+      "headerLogo": {
+        "w": 58,
+        "h": 58,
+        "nw": 1024
+      },
+      "heroH1": {
+        "overflowRight": false,
+        "fontSize": "38.4px"
+      }
+    },
+    "mobile": {
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "navDisplay": "flex",
+      "toggleVisible": true,
+      "logos": [
+        {
+          "cls": "brand__logo",
+          "present": true,
+          "naturalWidth": 1024,
+          "visible": true,
+          "box": {
+            "w": 52,
+            "h": 52
+          }
+        },
+        {
+          "cls": "hero__logo",
+          "present": true,
+          "naturalWidth": 1024,
+          "visible": true,
+          "box": {
+            "w": 68,
+            "h": 68
+          }
+        },
+        {
+          "cls": "footer__logo",
+          "present": true,
+          "naturalWidth": 1024,
+          "visible": true,
+          "box": {
+            "w": 110,
+            "h": 110
+          }
+        }
+      ],
+      "sticking": [],
+      "formRows": [
+        {
+          "rowW": 300,
+          "kids": [
+            300,
+            300
+          ],
+          "wraps": true
+        },
+        {
+          "rowW": 300,
+          "kids": [
+            300,
+            300
+          ],
+          "wraps": true
+        }
+      ],
+      "heroActions": {
+        "w": 350,
+        "overflow": false
+      }
+    }
+  },
+  "anchors": {
+    "about": {
+      "exists": true,
+      "top": 996
+    },
+    "services": {
+      "exists": true,
+      "top": 1610
+    },
+    "standard": {
+      "exists": true,
+      "top": 3251
+    },
+    "areas": {
+      "exists": true,
+      "top": 5151
+    },
+    "faq": {
+      "exists": true,
+      "top": 7210
+    },
+    "estimate": {
+      "exists": true,
+      "top": 6211
+    },
+    "special": {
+      "exists": true,
+      "top": 876
+    },
+    "plans": {
+      "exists": true,
+      "top": 4537
+    },
+    "top": {
+      "exists": true,
+      "top": 84
+    }
+  },
+  "navTests": {
+    "about": {
+      "before": 1610,
+      "scrollY": 996,
+      "hash": "#about",
+      "targetTop": 0,
+      "inView": true
+    },
+    "services": {
+      "before": 996,
+      "scrollY": 1610,
+      "hash": "#services",
+      "targetTop": 0,
+      "inView": true
+    },
+    "standard": {
+      "before": 1610,
+      "scrollY": 3251,
+      "hash": "#standard",
+      "targetTop": 0,
+      "inView": true
+    },
+    "areas": {
+      "before": 3251,
+      "scrollY": 5151,
+      "hash": "#areas",
+      "targetTop": 0,
+      "inView": true
+    },
+    "faq": {
+      "before": 5151,
+      "scrollY": 7208,
+      "hash": "#faq",
+      "targetTop": 2,
+      "inView": true
+    },
+    "estimate": {
+      "before": 7209,
+      "scrollY": 6119,
+      "hash": "#estimate",
+      "targetTop": 92,
+      "inView": true
+    },
+    "special": {
+      "before": 6119,
+      "scrollY": 1333,
+      "hash": "#special",
+      "targetTop": -457,
+      "inView": false
+    },
+    "plans": {
+      "before": 1333,
+      "scrollY": 3383,
+      "hash": "#plans",
+      "targetTop": 1154,
+      "inView": false
+    },
+    "top": {
+      "before": 3383,
+      "scrollY": 124,
+      "hash": "#top",
+      "targetTop": -40,
+      "inView": true
+    }
+  },
+  "mobileNavOpen": {
+    "ariaExpanded": "true",
+    "navVisible": true,
+    "navHeight": 49,
+    "linkCount": 6
+  },
+  "form": {
+    "present": true,
+    "fields": [
+      {
+        "tag": "input",
+        "type": "text",
+        "name": "name",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "input",
+        "type": "tel",
+        "name": "phone",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "input",
+        "type": "email",
+        "name": "email",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "select",
+        "type": "select-one",
+        "name": "service",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "select",
+        "type": "select-one",
+        "name": "property",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "input",
+        "type": "date",
+        "name": "date",
+        "required": false,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "textarea",
+        "type": "textarea",
+        "name": "message",
+        "required": true,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "input",
+        "type": "checkbox",
+        "name": "promo",
+        "required": false,
+        "disabled": false,
+        "visible": true
+      },
+      {
+        "tag": "button",
+        "type": "submit",
+        "name": null,
+        "required": false,
+        "disabled": false,
+        "visible": true
+      }
+    ]
+  },
+  "formTest": {
+    "ok": true,
+    "valid": true,
+    "statusBefore": "",
+    "statusAfter": "Thank you, QA Tester. Your estimate request has been received. We'll be in touch soon.",
+    "canInteract": true
+  },
+  "visualBugs": [
+    {
+      "check": "heroBrandColor",
+      "color": "rgb(224, 197, 122)",
+      "opacity": "1"
+    },
+    {
+      "check": "goldBtn",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(22, 48, 38)"
+    },
+    {
+      "check": "scrollPaddingTop",
+      "value": "auto"
+    },
+    {
+      "check": "facebookLinks",
+      "hrefs": [
+        "https://www.facebook.com/",
+        "https://www.facebook.com/",
+        "https://www.facebook.com/",
+        "https://www.facebook.com/",
+        "https://www.facebook.com/"
+      ],
+      "allPlaceholder": true
+    },
+    {
+      "check": "placeholderTestimonials",
+      "text": "Placeholder testimonials — replace with real client reviews as they come in."
+    },
+    {
+      "check": "heroLogoAlt",
+      "alt": ""
+    }
+  ],
+  "header": {
+    "position": "sticky",
+    "height": 84
+  }
+}
