@@ -570,3 +570,71 @@ h3 { font-size: 1.35rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* ==========================================================
+   Language switcher + Arabic / right-to-left support
+   ========================================================== */
+.lang-switch { display: flex; gap: 6px; padding: 8px 0; }
+.lang-switch button {
+  min-width: 48px; min-height: 44px;
+  padding: 0 12px;
+  font: 600 0.9rem/1 var(--font-body);
+  color: var(--cedar);
+  background: var(--white);
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.lang-switch button:hover { border-color: var(--cedar); }
+.lang-switch button[aria-pressed="true"] { background: var(--cedar); border-color: var(--cedar); color: var(--white); }
+.lang-switch button[lang="ar"] { font-family: "Cairo", system-ui, sans-serif; }
+@media (min-width: 960px) {
+  .lang-switch { padding: 0; gap: 4px; }
+  .lang-switch button { min-width: 40px; min-height: 36px; padding: 0 10px; font-size: 0.85rem; }
+}
+
+/* Arabic typography (Cormorant/Outfit have no Arabic glyphs) */
+html[lang="ar"] {
+  --font-display: "Cairo", "Segoe UI", Tahoma, sans-serif;
+  --font-body: "Cairo", "Segoe UI", Tahoma, sans-serif;
+}
+html[lang="ar"] body { line-height: 1.85; }
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3 { line-height: 1.35; font-weight: 700; }
+html[lang="ar"] .hero h1 { max-width: 16ch; }
+
+/* Mirror the few left/right-specific rules */
+[dir="rtl"] .skip-link { left: auto; right: 12px; }
+[dir="rtl"] .why-card { border-left: 0; border-right: 4px solid var(--oak); border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+[dir="rtl"] .estimate__perks li { padding-left: 0; padding-right: 28px; }
+[dir="rtl"] .estimate__perks li::before { left: auto; right: 0; }
+[dir="rtl"] .estimate-form select { padding-right: 14px; padding-left: 38px; background-position: left 14px center; }
+[dir="rtl"] .estimate-form input[type="tel"],
+[dir="rtl"] .estimate-form input[type="email"] { direction: ltr; text-align: right; }
+[dir="rtl"] .site-footer a[href^="tel:"] { direction: ltr; unicode-bidi: embed; }
+
+/* ==========================================================
+   Multi-page additions
+   ========================================================== */
+.site-nav a[aria-current="page"]:not(.btn) { color: var(--oak-deep); box-shadow: inset 0 -3px 0 var(--oak); }
+.btn[aria-current="page"] { background: var(--cedar); color: var(--white); }
+
+.page-hero { padding: 56px 0 48px; background: var(--cedar); color: var(--white); }
+.page-hero .eyebrow { color: var(--oak); }
+.page-hero h1 { color: var(--white); font-size: clamp(2.2rem, 8vw, 3.6rem); margin-bottom: 12px; }
+.page-hero p:last-child { max-width: 56ch; color: rgba(255, 255, 255, 0.88); font-size: 1.1rem; }
+@media (min-width: 960px) { .page-hero { padding: 80px 0 64px; } }
+
+/* On inner pages the first section follows the banner directly */
+.testimonials .note { margin-bottom: 24px; color: var(--muted); }
+.stars { margin-bottom: 10px; color: var(--oak); font-size: 1.3rem; letter-spacing: 3px; line-height: 1; }
+.review-cta { text-align: center; }
+.review-cta h2 { margin-bottom: 10px; }
+.review-cta p { color: var(--muted); margin-bottom: 24px; }
+.hero__actions--center { justify-content: center; }
+
+.contact-list { margin: 0 0 22px; }
+.contact-list li { display: flex; flex-wrap: wrap; gap: 6px 12px; padding: 6px 0; }
+.contact-list span { min-width: 76px; color: var(--muted); }
+.contact-list a { font-weight: 600; color: var(--cedar); text-decoration: none; }
+.contact-list a[href^="tel:"] { direction: ltr; unicode-bidi: embed; }
+.contact-list a:hover { color: var(--oak-deep); text-decoration: underline; }

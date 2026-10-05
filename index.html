@@ -4,27 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="google-site-verification" content="lIp1GkcDLArTtlPJ1Hu_sBUwxNSy_NlXlm6J9WlUJY4" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#1f3a2e" />
+    <meta name="theme-color" content="#1e3b2f" />
     <meta name="format-detection" content="telephone=yes" />
     <title>Cedar &amp; Oak Cleaning Services | Hamilton County, Indiana</title>
-    <meta
-      name="description"
-      content="Cedar &amp; Oak Cleaning Services provides professional residential and commercial cleaning in Carmel, Fishers, Westfield, Noblesville, and Hamilton County, Indiana. Safer products, reliable service, insured &amp; bonded."
-    />
-    <meta name="keywords" content="cleaning company Hamilton County, house cleaning Carmel, commercial cleaning Fishers, Westfield cleaning, Noblesville cleaners" />
+    <meta name="description" content="Cedar &amp; Oak Cleaning Services provides professional residential and commercial cleaning in Carmel, Fishers, Westfield, Noblesville, and Hamilton County, Indiana. Safer products, reliable service, insured &amp; bonded." />
     <link rel="canonical" href="https://cedaroakcleaning.com/" />
     <meta property="og:title" content="Cedar &amp; Oak Cleaning Services" />
-    <meta property="og:description" content="Clean spaces. Healthier living. More time for what matters. Proudly serving Hamilton County, Indiana." />
     <meta property="og:site_name" content="Cedar &amp; Oak Cleaning Services" />
+    <meta property="og:description" content="Clean spaces. Healthier living. More time for what matters. Proudly serving Hamilton County, Indiana." />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="icon" href="assets/logo.png" type="image/png" />
   </head>
   <body>
@@ -32,34 +25,31 @@
 
     <header class="site-header" data-header>
       <div class="site-header__inner">
-        <a class="brand" href="#top" aria-label="Cedar &amp; Oak Cleaning Services home">
+        <a class="brand" href="index.html" aria-label="Cedar &amp; Oak Cleaning Services home">
           <img class="brand__logo" src="assets/logo.png" alt="Cedar &amp; Oak Cleaning Services" width="200" height="200" />
         </a>
 
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          data-nav-toggle
-        >
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
           <span></span><span></span><span></span>
           <span class="visually-hidden">Menu</span>
         </button>
 
         <nav class="site-nav" id="site-nav" data-nav aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#standard">Our Standard</a>
-          <a href="#areas">Service Areas</a>
-          <a href="#faq">FAQ</a>
-          <a class="btn btn--gold btn--sm" href="#services">Browse Services</a>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="services.html">Services</a>
+          <a href="reviews.html">Reviews</a>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="en" lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+            <button type="button" data-lang="fr" lang="fr" aria-pressed="false">FR</button>
+            <button type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+          </div>
+          <a class="btn btn--gold btn--sm" href="booking.html">Book Now</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <!-- 1. HERO -->
       <section class="hero" id="top" aria-labelledby="hero-heading">
         <div class="hero__media" aria-hidden="true">
           <img
@@ -81,7 +71,7 @@
             service, careful attention to detail, and thoughtfully selected safer cleaning products.
           </p>
           <div class="hero__actions">
-            <a class="btn btn--gold" href="#services">Browse the Services</a>
+            <a class="btn btn--gold" href="services.html">Browse the Services</a>
             <a
               class="btn btn--ghost"
               href="https://www.facebook.com/share/1BKkmuoboj/"
@@ -94,7 +84,6 @@
         </div>
       </section>
 
-      <!-- 2. ABOUT -->
       <section class="section about" id="about" aria-labelledby="about-heading">
         <div class="container about__grid">
           <div class="about__copy reveal">
@@ -127,92 +116,6 @@
         </div>
       </section>
 
-      <!-- 4. SERVICES -->
-      <section class="section services" id="services" aria-labelledby="services-heading">
-        <div class="container">
-          <div class="section__intro reveal">
-            <p class="eyebrow">What we offer</p>
-            <h2 id="services-heading">Our Services</h2>
-            <p>Residential and commercial cleaning tailored to the way you live and work.</p>
-          </div>
-
-          <div class="services__grid">
-            <article class="service-card reveal">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M8 40V18l16-10 16 10v22H8Z" stroke="currentColor" stroke-width="2"/><path d="M20 40V28h8v12" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <h3>Routine Home Cleaning</h3>
-              <p>Reliable recurring cleaning to keep your home fresh, comfortable, and ready for everyday life.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="60">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <h3>Detailed Cleaning</h3>
-              <p>Thorough cleaning focused on the details that make a noticeable difference.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="120">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M10 34c4-10 10-16 14-18 4 2 10 8 14 18H10Z" stroke="currentColor" stroke-width="2"/><path d="M18 34v4h12v-4" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <h3>Deep Cleaning</h3>
-              <p>A more comprehensive clean for spaces that need extra attention.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="180">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="14" width="28" height="22" rx="2" stroke="currentColor" stroke-width="2"/><path d="M10 22h28M22 14v22" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <h3>Kitchen &amp; Bathroom Cleaning</h3>
-              <p>Detailed cleaning for the areas of your home that need it most.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M8 36l8-20h16l8 20H8Z" stroke="currentColor" stroke-width="2"/><path d="M18 28h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <h3>Move-In &amp; Move-Out Cleaning</h3>
-              <p>Help make transitions smoother with a detailed clean before or after a move.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="60">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 20h32M16 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              <h3>Office Cleaning</h3>
-              <p>Professional cleaning for offices and professional workspaces.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="120">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M10 36V16l14-8 14 8v20H10Z" stroke="currentColor" stroke-width="2"/><path d="M18 36V24h12v12" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <h3>Business &amp; Commercial Cleaning</h3>
-              <p>Reliable cleaning solutions designed for businesses and commercial spaces.</p>
-            </article>
-
-            <article class="service-card reveal" data-reveal-delay="180">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="18" width="32" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M14 18V14a10 10 0 0 1 20 0v4" stroke="currentColor" stroke-width="2"/></svg>
-              </div>
-              <h3>Organizations &amp; Facilities</h3>
-              <p>Cleaning support for organizations, facilities, and larger spaces.</p>
-            </article>
-
-            <article class="service-card reveal">
-              <div class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M24 10l3.5 8H36l-7 5.5L32 32l-8-5.5L16 32l3-8.5L12 18h8.5L24 10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-              </div>
-              <h3>Customized Cleaning Plans</h3>
-              <p>Personalized cleaning plans based on your space, priorities, and needs.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. WHY CHOOSE -->
       <section class="section why" id="why" aria-labelledby="why-heading">
         <div class="container">
           <div class="section__intro reveal">
@@ -238,7 +141,6 @@
         </div>
       </section>
 
-      <!-- 6. THE CEDAR & OAK STANDARD -->
       <section class="section standard" id="standard" aria-labelledby="standard-heading">
         <div class="container">
           <div class="standard__panel reveal">
@@ -297,65 +199,6 @@
         </div>
       </section>
 
-      <!-- 7. HOW IT WORKS -->
-      <section class="section process" id="process" aria-labelledby="process-heading">
-        <div class="container">
-          <div class="section__intro reveal">
-            <p class="eyebrow">Simple steps</p>
-            <h2 id="process-heading">How It Works</h2>
-          </div>
-          <ol class="process__list">
-            <li class="reveal">
-              <span class="process__num">01</span>
-              <div>
-                <h3>Request an Estimate</h3>
-                <p>Tell us about your home, business, or space and what you need cleaned.</p>
-              </div>
-            </li>
-            <li class="reveal" data-reveal-delay="80">
-              <span class="process__num">02</span>
-              <div>
-                <h3>Personalized Assessment</h3>
-                <p>For larger or more detailed jobs, we can briefly assess the space and understand your priorities.</p>
-              </div>
-            </li>
-            <li class="reveal" data-reveal-delay="160">
-              <span class="process__num">03</span>
-              <div>
-                <h3>Enjoy a Cleaner Space</h3>
-                <p>Get reliable, professional cleaning tailored to your needs.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- 8. CUSTOM CLEANING PLANS -->
-      <section class="section plans" id="plans" aria-labelledby="plans-heading">
-        <div class="container plans__grid">
-          <div class="plans__copy reveal">
-            <p class="eyebrow">Made for your space</p>
-            <h2 id="plans-heading">Custom Cleaning Plans</h2>
-            <p class="lead">We believe every home and workplace is different.</p>
-            <p>
-              Before larger or more detailed jobs, we can provide a brief assessment to understand the
-              size of the space, the level of cleaning required, and your specific priorities. This
-              allows us to provide clear, fair, and competitive pricing.
-            </p>
-            <a class="btn btn--gold" href="#estimate">Get My Personalized Estimate</a>
-          </div>
-          <figure class="plans__media reveal" data-reveal-delay="100">
-            <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80"
-              alt="Professional cleaner wiping a bright kitchen counter"
-              width="1400"
-              height="1000"
-            />
-          </figure>
-        </div>
-      </section>
-
-      <!-- 9. SERVICE AREAS -->
       <section class="section areas" id="areas" aria-labelledby="areas-heading">
         <div class="container">
           <div class="section__intro section__intro--center reveal">
@@ -376,164 +219,6 @@
         </div>
       </section>
 
-      <!-- 10. TESTIMONIALS -->
-      <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-heading">
-        <div class="container">
-          <div class="section__intro reveal">
-            <p class="eyebrow">Reviews</p>
-            <h2 id="testimonials-heading">What Our Clients Say</h2>
-            <p class="note">Placeholder testimonials — replace with real client reviews as they come in.</p>
-          </div>
-          <div class="testimonials__grid" data-testimonials>
-            <blockquote class="testimonial reveal">
-              <p>“Cedar &amp; Oak left our home spotless and smelling fresh—without harsh chemical odors. Scheduling was easy and the team was so respectful of our pets.”</p>
-              <footer>— Sarah M., Carmel</footer>
-            </blockquote>
-            <blockquote class="testimonial reveal" data-reveal-delay="80">
-              <p>“We switched our office cleaning to Cedar &amp; Oak and immediately noticed the difference. Reliable, detailed, and truly professional.”</p>
-              <footer>— James R., Fishers</footer>
-            </blockquote>
-            <blockquote class="testimonial reveal" data-reveal-delay="160">
-              <p>“Their move-out clean helped us get our deposit back. Clear communication and careful attention to every room.”</p>
-              <footer>— Priya &amp; Alex, Westfield</footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <!-- ESTIMATE FORM -->
-      <section class="section estimate" id="estimate" aria-labelledby="estimate-heading">
-        <div class="container estimate__grid">
-          <div class="estimate__copy reveal">
-            <p class="eyebrow">Get started</p>
-            <h2 id="estimate-heading">Request Your Estimate</h2>
-            <p>
-              Share a few details about your space and we’ll follow up promptly with the next steps.
-            </p>
-            <ul class="estimate__perks">
-              <li>No obligation quote</li>
-              <li>Residential &amp; commercial</li>
-              <li>Message us anytime on Facebook</li>
-            </ul>
-            <a
-              class="btn btn--ghost-dark"
-              href="https://www.facebook.com/share/1BKkmuoboj/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-facebook-link
-            >Message Us on Facebook</a>
-          </div>
-
-          <form class="estimate-form reveal" data-reveal-delay="100" data-estimate-form novalidate>
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="form-row two">
-              <div>
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel" required />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <label for="address">Address</label>
-              <input id="address" name="address" type="text" autocomplete="street-address" />
-            </div>
-            <div class="form-row two">
-              <div>
-                <label for="service">Service Type</label>
-                <select id="service" name="service" required>
-                  <option value="" disabled selected>Select a service</option>
-                  <option>Routine Home Cleaning</option>
-                  <option>Detailed Cleaning</option>
-                  <option>Deep Cleaning</option>
-                  <option>Kitchen &amp; Bathroom Cleaning</option>
-                  <option>Move-In / Move-Out Cleaning</option>
-                  <option>Office Cleaning</option>
-                  <option>Business &amp; Commercial Cleaning</option>
-                  <option>Organizations &amp; Facilities</option>
-                  <option>Customized Cleaning Plan</option>
-                </select>
-              </div>
-              <div>
-                <label for="property">Property Type</label>
-                <select id="property" name="property" required>
-                  <option value="" disabled selected>Select property type</option>
-                  <option>Home / Residence</option>
-                  <option>Apartment / Condo</option>
-                  <option>Office</option>
-                  <option>Business / Commercial</option>
-                  <option>Organization / Facility</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <label for="date">Preferred Date</label>
-              <input id="date" name="date" type="date" />
-            </div>
-            <div class="form-row">
-              <label for="message">Message / Cleaning Needs</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your space, priorities, pets, access notes…" required></textarea>
-            </div>
-            <button class="btn btn--gold btn--full" type="submit">Request Estimate</button>
-            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-
-      <!-- 11. FAQ -->
-      <section class="section faq" id="faq" aria-labelledby="faq-heading">
-        <div class="container narrow">
-          <div class="section__intro reveal">
-            <p class="eyebrow">Answers</p>
-            <h2 id="faq-heading">Frequently Asked Questions</h2>
-          </div>
-          <div class="faq__list" data-faq>
-            <details class="faq__item reveal">
-              <summary>What areas do you serve?</summary>
-              <p>We proudly serve Carmel, Fishers, Westfield, Noblesville, and surrounding Hamilton County communities.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Do you offer recurring cleaning?</summary>
-              <p>Yes. Routine home and office cleaning can be scheduled weekly, bi-weekly, or on a custom recurring cadence that fits your needs.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Do you clean offices and businesses?</summary>
-              <p>Absolutely. We provide office, business, commercial, and facility cleaning with reliable scheduling and professional standards.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Do you offer move-in and move-out cleaning?</summary>
-              <p>Yes. Our move-in and move-out cleaning helps make transitions smoother with a detailed clean before or after a move.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Can I customize my cleaning service?</summary>
-              <p>Yes. Every home and workplace is different—we create personalized plans based on your space, priorities, and needs.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Do you use pet-friendly products?</summary>
-              <p>We thoughtfully select safer, eco-friendly product options designed with families, pets, and everyday living in mind.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Are your team members background checked?</summary>
-              <p>Yes. Our team members are trained and background-checked because safety and peace of mind come first.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>Are you insured and bonded?</summary>
-              <p>Yes. Cedar &amp; Oak Cleaning Services is insured and bonded for your protection and peace of mind.</p>
-            </details>
-            <details class="faq__item reveal">
-              <summary>How do I request an estimate?</summary>
-              <p>Use the estimate form on this page or message us on Facebook. We’ll follow up promptly with next steps.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- 12. FINAL CTA -->
       <section class="final-cta" id="contact" aria-labelledby="final-cta-heading">
         <div class="final-cta__media" aria-hidden="true">
           <img
@@ -547,7 +232,7 @@
           <h2 id="final-cta-heading">Ready for a Cleaner Space?</h2>
           <p>Let Cedar &amp; Oak take cleaning off your to-do list.</p>
           <div class="hero__actions">
-            <a class="btn btn--gold" href="#estimate">Request Your Estimate</a>
+            <a class="btn btn--gold" href="booking.html">Request Your Estimate</a>
             <a
               class="btn btn--ghost"
               href="https://www.facebook.com/share/1BKkmuoboj/"
@@ -558,32 +243,19 @@
           </div>
         </div>
       </section>
+    
     </main>
 
-    <!-- 13. FOOTER -->
     <footer class="site-footer">
       <div class="container site-footer__grid">
         <div class="site-footer__brand">
           <img class="footer__logo" src="assets/logo.png" alt="Cedar &amp; Oak Cleaning Services" width="180" height="180" />
           <p>Clean Spaces. Healthier Living. More Time for What Matters.</p>
           <div class="socials" aria-label="Social media">
-            <a
-              class="social social--facebook"
-              href="https://www.facebook.com/share/1BKkmuoboj/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              data-facebook-link
-            >
+            <a class="social social--facebook" href="https://www.facebook.com/share/1BKkmuoboj/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-facebook-link>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg>
             </a>
-            <a
-              class="social social--instagram"
-              href="https://www.instagram.com/cedarnoak2026?stkn=dGI5cjEzMzQ2cTQx"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-            >
+            <a class="social social--instagram" href="https://www.instagram.com/cedarnoak2026?stkn=dGI5cjEzMzQ2cTQx" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2Zm0 2C5.7 4 4 5.7 4 7.8v8.4C4 18.3 5.7 20 7.8 20h8.4c2.1 0 3.8-1.7 3.8-3.8V7.8C20 5.7 18.3 4 16.2 4H7.8Zm8.9 2.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg>
             </a>
           </div>
@@ -597,11 +269,11 @@
         <div>
           <h3>Services</h3>
           <ul>
-            <li><a href="#services">Residential Cleaning</a></li>
-            <li><a href="#services">Commercial Cleaning</a></li>
-            <li><a href="#services">Deep Cleaning</a></li>
-            <li><a href="#services">Move-In / Move-Out</a></li>
-            <li><a href="#plans">Customized Cleaning</a></li>
+            <li><a href="services.html">Residential Cleaning</a></li>
+            <li><a href="services.html">Commercial Cleaning</a></li>
+            <li><a href="services.html">Deep Cleaning</a></li>
+            <li><a href="services.html">Move-In / Move-Out</a></li>
+            <li><a href="services.html#plans">Customized Cleaning</a></li>
           </ul>
         </div>
 
@@ -610,7 +282,7 @@
           <ul>
             <li><a href="tel:+13179000132">+1 317-900-0132</a></li>
             <li><a href="mailto:info@cedarnoak.com">info@cedarnoak.com</a></li>
-            <li><a href="#estimate">Request an Estimate</a></li>
+            <li><a href="booking.html">Request an Estimate</a></li>
             <li><a href="https://www.facebook.com/share/1BKkmuoboj/" target="_blank" rel="noopener noreferrer" data-facebook-link>Message Us on Facebook</a></li>
             <li><a href="https://www.instagram.com/cedarnoak2026?stkn=dGI5cjEzMzQ2cTQx" target="_blank" rel="noopener noreferrer">Follow Us on Instagram</a></li>
           </ul>
@@ -621,6 +293,7 @@
       </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/site.js" defer></script>
   </body>
 </html>
