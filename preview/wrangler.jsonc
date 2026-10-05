@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cedar---oak-cleaning-company-main",
+  "compatibility_date": "2026-10-01",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": ".",
+    "exclude": [
+      ".git/**",
+      ".gitignore",
+      "server.js",
+      "server.ps1"
+    ]
+  }
+}
